@@ -191,14 +191,37 @@ main {
 
 @media(min-width: 1110px) {
     main {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1.75rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
     }
 
     .primeira-secao {
         grid-column: 1 / 3;
+
+        display: grid;
+        
     }
+
+    .primeira-secao picture {
+        grid-column: 1 / 3;
+    }
+
+    .primeira-secao h1 {
+        grid-column: 1 / 2;
+        font-size: 3.5rem;
+        line-height: 1.1;
+    }
+
+    .primeira-secao div {
+        grid-column: 2 / 3;
+    }
+
+    .segunda-secao h2 {
+        font-size: 2.5rem;
+    }
+}
+
 
     header > button {
         display: none;
